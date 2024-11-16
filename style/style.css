@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 299px) {
+    * {
+        display: none;
+    }
+}
+
+:root {
+    --cor-rosa: #F0D9C9;
+    --cor-branco: #FFFFFF;
+    --cor-verde-claro: #A0CABC;
+    --cor-verde-escuro: #6b9c8c;
+    --cor-preto: #000000;
+    --fonte-padrao: "Xiomara", "Ms Madi", cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+@font-face {
+    font-family: 'Xiomara';
+    src: url('../font/Xiomara-Script.ttf');
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* NAVEGAÇÃO */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        width: 100vw;
+        background-color: var(--cor-verde-escuro);
+        color: var(--cor-verde-claro);
+        overflow-x: hidden;
+        /* scroll-snap-type: y mandatory; */
+        scroll-behavior: smooth;
+        height: 300vh;
+    }
+    
+    header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: start; */
+        z-index: 3;
+        background-color: var(--cor-verde-escuro);
+        color: var(--cor-verde-claro);
+        box-shadow: 0px 0px 10px black;
+    }
+    header > h1 {
+        height: 60px;
+        font-family: var(--fonte-padrao);
+        font-size: 1.3em;
+        margin: 10px;
+    }
+    nav {
+        margin: 18px 28px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: start;
+    }
+    nav > ul {
+        list-style-type: none;
+        text-align: end;
+    }
+    nav > ul > li {
+        display: none;
+    }
+    a {
+        text-decoration: none;
+    }
+
+
+    /* CONTEUDO */
+    main {
+        width: 100%;
+    }
+
+    section#apresentacao{
+        margin: 0 ;
+        margin-top: 60px;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+    }
+    section#apresentacao > video {
+        z-index: 0;
+        position: relative;
+        width: 150%;
+        object-fit: cover;
+        object-position: center;
+    }
+    div.blur {
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        box-shadow: inset 0px 0px 20px 1px var(--cor-preto);
+    }
+    div.logo {
+        width: 98%;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-20%);
+        z-index: 2;
+
+    }
+    div.logo > img {
+        margin: 0 auto;
+        width: 30%;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px var(--cor-preto);
+    }
+    div.logo > h1 {
+        margin: 0 auto;
+        font-family: var(--fonte-padrao);
+        font-size: 2em;
+        text-shadow: 2px 2px 5px var(--cor-preto);
+        width: 280px;
+    }
+
+    section#cardapio {
+        font-family: "Caveat Brush", cursive;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    div#vegetariano {
+        width: 90%;
+        color: #6b9c8c;
+        background-color: var(--cor-rosa);
+        margin: 20px auto;
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+
+
+
