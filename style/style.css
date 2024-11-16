@@ -142,7 +142,17 @@
         width: 90%;
         color: #6b9c8c;
         background-color: var(--cor-rosa);
-        margin: 20px auto;
+        margin: 20px;
+    }
+    div#vegetariano > h2 {
+        /* width: 100%; */
+        text-align: center;
+        padding: 20px 0px;
+    }
+    div#vegetariano > ul > li {
+        /* width: 100%; */
+        text-align: start;
+        padding: 20px 0px 20px 10px;
     }
 
 
